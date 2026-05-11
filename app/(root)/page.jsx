@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { onBoardUser } from "../../modules/auth/actions";
 
-const Page = () => {
+const Page = async() => {
   await onBoardUser();
   return (
     <div className="flex items-center justify-center w-full px-4 py-8">
